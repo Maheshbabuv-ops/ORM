@@ -1,4 +1,4 @@
-# Ex02 Django ORM Web Application
+# Ex01 Django ORM Web Application
 ## Date:24/11/2025 
 
 ## AIM
@@ -24,6 +24,7 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 Model.py
+```
 from django.db import models
 from django.contrib import admin
 class car(models.Model):
@@ -32,17 +33,20 @@ class car(models.Model):
     price=models.IntegerField()
     year=models.IntegerField()
 class carAdmin(admin.ModelAdmin):
-    list_display=('reg','car','price','year')```
+    list_display=('reg','car','price','year')
 admin.py
-```from django.contrib import admin
+from django.contrib import admin
 from .models import car,carAdmin
-admin.site.register(car,carAdmin)```
+admin.site.register(car,carAdmin)
+
+```
 
 
 
 
 ## OUTPUT
-ORM/image.png
+<img width="1906" height="781" alt="Screenshot 2025-11-24 143319" src="https://github.com/user-attachments/assets/1464c23f-c6b0-47a6-ba14-ddddc23452ab" />
+
 
 
 ## RESULT
